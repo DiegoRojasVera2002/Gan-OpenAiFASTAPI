@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenAI Quickstart</title>
+        <link rel="stylesheet" href="{{ url_for('static', path='/main.css') }}" />
+  </head>
+  <body>
+    <h3>Imagen FashionMNIST</h3>
+    <form action="/" method="post">
+      <input type="text" name="Vestimenta" placeholder="Entra una vestimenta" autocomplete="off" required />
+      <input type="submit" value="Nombre de la Vestimenta" />
+    </form>
+    {% if result %}
+    <div class="result">{{ result }}</div>
+    {% endif %}
+  </body>
+</html>
